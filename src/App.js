@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React from "react";
+import Container from "react-bootstrap/Container";
+import MyCarousal from "./pages/carousal/carousal";
+import MyNavbar from "./pages/navbar/navbar";
+import About from "./pages/phase1/recepie";
+import Ingredients from "./pages/ingredients/ingredients";
+import CookingSteps from "./pages/steps/steps";
+import FooterPanel from "./pages/footer/footer";
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      
+      {/* <MyCarousal /> */}
+      <MyNavbar />
+      <Container>
+      <About />
+      </Container>
+      <hr />
+      <Ingredients />
+      <hr />
+      <CookingSteps />
+      <he />
+      <FooterPanel />
+
     </div>
   );
 }

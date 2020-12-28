@@ -1,0 +1,17 @@
+.about {
+    background-color: transparent;
+    font-size: 1.1em;
+  }
+  
+  .like {
+    width: 8em;
+    
+
+  }
+  .profile {
+    width: 20em;
+  }
+  
+  .my-details {
+    background-color: rgba(247, 241, 241, 0.747);
+  }
