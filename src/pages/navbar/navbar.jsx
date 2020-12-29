@@ -26,7 +26,6 @@ const MyNavbar = () => {
     </Nav>
     <Nav className="ml-auto">
       <Nav.Link href="#top">< AiOutlineSearch /></Nav.Link>
-      
       <Nav.Link href="#about">< AiOutlineBars /></Nav.Link>
       <Nav.Link href="#profile">< FiUser /></Nav.Link>
     </Nav>

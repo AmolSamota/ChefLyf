@@ -4,9 +4,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import MyCarousal from "../carousal/carousal";
 import "./recepie.css";
-import { BiLike } from "react-icons/bi";
-import { FaRegComment } from "react-icons/fa";
-import { FiShare2 } from "react-icons/fi";
+import { AiOutlineHeart } from "react-icons/ai";
+import { AiOutlineStar } from "react-icons/ai";
+import { BiComment } from "react-icons/bi";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import pizza from "../../assests/recepies/download.jfif";
@@ -32,29 +32,29 @@ const About = () => {
               <Row>
               <Col className="d-flex justify-content-center flex-wrap">
                   <div>
-                    <a href="#contact">
-                      <Button className="m-2" variant="outline-primary">
-                      <div className="like" > <BiLike /> Like&nbsp;&nbsp;</div>
+                    
+                      <Button className="m-2">
+                      <div className="like" > <AiOutlineHeart />&nbsp;</div>
                       </Button>
-                    </a>
+                    
                   </div>
 
 
                   <div>
-                    <a href="https://drive.google.com/file/d/1LofzqwNISqAK6cBSLHWLEBy7ZCcESmh6/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                      <Button className="m-2" variant="outline-success">
-                      <div className="like" > <FaRegComment /> Comment&nbsp;&nbsp;</div>
+                    
+                      <Button className="m-2">
+                      <div className="like" >< AiOutlineStar />&nbsp;&nbsp;</div>
                       </Button>
-                    </a>
+                  
                   </div>
 
 
                   <div>
-                    <a href="https://github.com/AmolSamota" target="_blank" rel="noopener noreferrer">
-                      <Button className="m-2" variant="outline-dark">
-                      <div className="like" > <FiShare2 /> Share&nbsp;&nbsp;</div>
+                    
+                      <Button className="m-2">
+                      <div className="like" > <BiComment />&nbsp;&nbsp;</div>
                       </Button>
-                    </a>
+                    
                   </div>
       
                 </Col>
