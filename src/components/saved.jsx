@@ -4,18 +4,18 @@ import { Link } from "react-router-dom";
 import MyNavbar from "../pages/navbar/navbar";
 
 
-function Profile() {
+function Save() {
     return(
     <div>
         <div >
             <MyNavbar />
             <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-            <h1>hello</h1>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <h1>wlcm to saved pages</h1>
             <Link to="/home">
                 <button className="btn btn-dark expand margin"> Home </button> 
             </Link>
@@ -25,4 +25,4 @@ function Profile() {
 
 };
 
-export default Profile;
+export default Save;
