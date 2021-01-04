@@ -1,17 +1,43 @@
+.search-form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  width: 50%;
+  border: 0;
+  padding: 10px;
+}
+
+.search-button {
+  background: lightcoral;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+}
+
+
+.linknav{
+  color: white;
+  /* background-color: tomato; */
+}
 .logo {
-    width: 4%;
+    width: 3%;
     border-radius: 55%;
     
   }
   
+  
   .nav-theme {
-    background-color: #101018f8;
+    background-color: #c02121f8;
     font-size: 20px;
   }
   
   .animate-navbar {
-    box-shadow: 1px 1px 1px #222;
-    animation: moveDown 0.5s ease-in-out;
+    box-shadow: 1px 1px 1px #c02121f8;
+    animation: moveDown .5s ease-in-out;
   }
   
   @keyframes moveDown {

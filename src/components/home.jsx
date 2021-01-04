@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Recipe from "../Recipe"; 
-import axios from "axios";
+// import Recipe from "../Recipe"; 
+// import axios from "axios";
 import { Link } from "react-router-dom";
 import MyNavbar from "../pages/navbar/navbar";
+import "./home.css";
 
 
 
@@ -43,12 +44,13 @@ const getSearch = e =>{
             <br></br>
             <br></br>
             <br></br>
-            <h1>Welcome to our website</h1>
+            <br></br>
+            <h1 className="d">Welcome to ChefLyf</h1>
             <br></br>
             <br></br>
             <br></br>
             <div className="App">
-                <form onSubmit={getSearch} className="search-form">
+                {/* <form onSubmit={getSearch} className="search-form">
                     <input className="search-bar" type="text" value={search} onChange={updateSearch}/>
                     <button className="search-button" type="submit">
                         Search
@@ -64,7 +66,7 @@ const getSearch = e =>{
                     ingredients={recipe.recipe.ingredients}
                     />
                 ))}
-                </div>
+                </div> */}
                 
             </div>
             <Link to="/recipe">

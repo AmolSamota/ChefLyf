@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
+// import axios from "axios";
 import { Link } from "react-router-dom";
 import MyNavbar from "../pages/navbar/navbar";
 import Container from "react-bootstrap/Container";
-import MyCarousal from "../pages/carousal/carousal";
+// import MyCarousal from "../pages/carousal/carousal";
 import About from "../pages/phase1/recepie";
 import Ingredients from "../pages/ingredients/ingredients";
 import CookingSteps from "../pages/steps/steps";
@@ -15,9 +15,7 @@ function Recipe() {
         
 
         <MyNavbar />
-        <br></br>
-        <br></br>
-        <br></br>
+        
         <br></br>
         <br></br>
         <br></br>

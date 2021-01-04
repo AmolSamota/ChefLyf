@@ -1,9 +1,14 @@
+.ml-auto{
+  align-content: left;
+}
+
 .about {
     background-color: transparent;
     font-size: 1.1em;
   }
   .m-2{
-    background-color: white;
+    background-color: rgb(58, 146, 40);
+
     border: none;
   }
   .like {
