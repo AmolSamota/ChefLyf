@@ -5,13 +5,13 @@ import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import MyCarousal from "../carousal/carousal";
 import "./recepie.css";
-// import { AiOutlineHeart } from "react-icons/ai";
-// import { AiOutlineCloudDownload } from "react-icons/ai";
 import { AiOutlineStar } from "react-icons/ai";
 import { BiComment } from "react-icons/bi";
+import { AiOutlineHeart } from "react-icons/ai";
+// import { AiOutlineCloudDownload } from "react-icons/ai";
 // import Image from "react-bootstrap/Image";
 // import { Link } from "react-router-dom";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 // import pizza from "../../assests/recepies/download.jfif";
 // import pasta from "../../assests/recepies/pasta-min.jpg";
 // import Carousel from "react-bootstrap/Carousel";
@@ -27,7 +27,6 @@ const About = () => {
             
             <Col xs={12} md={6}>
                
-               {/* <br></br><br></br> */}
               <Row className="justify-content-center mb-2 mr-2 ">
             
                 <MyCarousal />
@@ -36,28 +35,22 @@ const About = () => {
               <Col className="d-flex justify-content-center flex-wrap">
                 <div>
                   <Nav className="ml-auto">
-                  <Nav.Link href="#top" to="/home">< AiOutlineStar className="linknav" />445</Nav.Link>
+                    <Nav.Link href="#top" to="/home">< AiOutlineHeart className="linknav" />445</Nav.Link>
                   </Nav>
                   
                 </div>
+                
+                <div>
+                  <Nav className="ml-auto">
+                    <Nav.Link href="#top" to="/home">< BiComment className="linknav" />32</Nav.Link>
+                  </Nav> 
+                </div>
 
-
-                  <div>
-                    
-                      <Button className="m-2">
-                      <div className="like" >< AiOutlineStar />&nbsp;&nbsp;</div>
-                      </Button>
-                  
-                  </div>
-
-
-                  <div>
-                    
-                      <Button className="m-2">
-                      <div className="like" > <BiComment />&nbsp;&nbsp;</div>
-                      </Button>
-                    
-                  </div>
+                <div>
+                <Nav className="ml-auto">
+                    <Nav.Link href="#top" to="/home">< AiOutlineStar className="linknav" />4.6</Nav.Link>
+                  </Nav> 
+                </div>
       
                 </Col>
               </Row>
@@ -67,7 +60,9 @@ const About = () => {
             <Col xs={12} md={6}>
             <Row className="justify-content-center mb-2 mr-2 ">
               <Col xs={12} md={6}>
-                <h1>Amol's kitchen</h1>
+                <h1 className="linknav">
+                    <Nav.Link href="#profile" to="/profile">Amol's kitchen</Nav.Link>
+                </h1>
                 <h6>4500 followers</h6>
                 <h6>225 subs</h6>
               </Col>
@@ -77,6 +72,7 @@ const About = () => {
               <Col xs={12} md={12}>
                 <button>Cook</button>
                 <h6>222 cooked this</h6>
+                <h6>cooking time - 1hr</h6>
                 </Col>
               </Row>
                 
@@ -84,14 +80,12 @@ const About = () => {
               </Col>
             </Row>
               <Row className="justify-content-center mb-2 mr-2 ">
-                <h1>Recipe name</h1>
-                <h1>Recipe Description</h1>
+                <h1>Pizza</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, sapiente dolore delectus 
                   incidunt culpa corrupti eius consectetur ea nam doloribus vel iure totam perferendis 
                   iusto laboriosam quo nisi necessitatibus. Iusto.</p>
               </Row>
             </Col>
-
 
           </Row>
         </Container>

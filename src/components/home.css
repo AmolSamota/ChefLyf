@@ -1,4 +1,12 @@
-/* .d{
-    height: 100em;
-    font-size: 25em;
-} */
+h1.d{
+    /* height: 10em; */
+    /* font-size: 25em; */
+    text-align: left;
+    color: #c02121f8;
+    display: inline;
+    margin: 450px;
+}
+
+.home{
+    margin-top: 100px;
+}

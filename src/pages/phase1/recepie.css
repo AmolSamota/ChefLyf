@@ -1,7 +1,9 @@
 .ml-auto{
   align-content: left;
 }
-
+.linknav{
+  color: black;
+}
 .about {
     background-color: transparent;
     font-size: 1.1em;

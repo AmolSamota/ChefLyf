@@ -2,12 +2,22 @@
     background-color: transparent;
     font-size: 1.1em;
   }
-  
+  .u{
+    display: inline;
+  }
+  button.see-all{
+    border-radius: 500px;
+    color: red;
+  }
+
   .like {
     width: 8em;
-    
-
   }
+  input{
+    width: 80px;
+  }  
+  
+  
   .profile {
     width: 20em;
   }
