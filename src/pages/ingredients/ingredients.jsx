@@ -48,7 +48,7 @@ const Ingredients = () => {
                 <Image className="profile justify-content-end" alt="profile" src={pizza} thumbnail fluid />
             </Row>
             <Row className="justify-content-center mb-2 mr-2 ">
-                <h5>Macroni</h5>
+                <h5>Macroni 20 gm</h5>
                 {/* <h2><input className="inl" type="number"></input></h2> */}
             </Row>
 
@@ -59,7 +59,7 @@ const Ingredients = () => {
                 <Image className="profile justify-content-end" alt="profile" src={pizza} thumbnail fluid />
               </Row>
               <Row className="justify-content-center mb-2 mr-2 ">
-                <h5>Macroni</h5>
+                <h5>Macroni 20 gm</h5>
                 {/* <h2><input className="inl" type="number"></input></h2> */}
             </Row>
         </Col>
@@ -84,6 +84,8 @@ const Ingredients = () => {
 
         </Row>
         </Container>
+
+        
       </div>
     </div>
   );

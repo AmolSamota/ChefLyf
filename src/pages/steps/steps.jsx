@@ -10,13 +10,17 @@ const CookingSteps = () => {
   return (
     <div id="about">
       <div className="about">
-        <h1 className="pt-3 text-left font-details pb-3">Cooking Steps</h1>
+        {/* <h1 className="pt-3 text-left font-details pb-3">Cooking Steps</h1> */}
         
       </div>
         <Container>
           <Row className="pt-3 pb-5 align-items-center">
             
               <Col xs={12} md={6}>
+
+              <Row className="justify-content-left mb-2 mr-2 ">
+                  <h1 className="pt-3 text-left font-details pb-3 u">Cooking Steps</h1>
+              </Row>
                 <Row className="justify-content-left mb-2 mr-2 ">
                     <Card style={{ width: '28rem' }}>
                     <Card.Img variant="top" src={pizza} style={{ width: '10rem'}}/>
@@ -49,6 +53,7 @@ const CookingSteps = () => {
 
           </Row>
         </Container>
+        
 
     </div>
   );

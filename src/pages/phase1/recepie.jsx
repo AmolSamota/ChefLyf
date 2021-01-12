@@ -70,9 +70,35 @@ const About = () => {
               {/* <Row className="pt-3 pb-5 align-items-center"></Row> */}
               <Row className="pt-3 pb-5 align-items-center">
               <Col xs={12} md={12}>
-                <button>Cook</button>
+                {/* <button href="#steps">Cook</button>
                 <h6>222 cooked this</h6>
-                <h6>cooking time - 1hr</h6>
+                <h6>cooking time - 1hr</h6> */}
+{/* <!-- Button trigger modal --> */}
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+{/* <!-- Modal --> */}
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
                 </Col>
               </Row>
                 
