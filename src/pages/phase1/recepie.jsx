@@ -18,7 +18,10 @@ import { AiOutlineHeart } from "react-icons/ai";
 // import ScrollDown from "../scroll/scrol";
 
 const About = () => {
+  
+
   return (
+
     <div id="about">
       <div className="about">
         <h1 className="pt-3 text-center font-details pb-3"></h1>
@@ -70,16 +73,16 @@ const About = () => {
               {/* <Row className="pt-3 pb-5 align-items-center"></Row> */}
               <Row className="pt-3 pb-5 align-items-center">
               <Col xs={12} md={12}>
-                {/* <button href="#steps">Cook</button>
+                <button href="#steps">Cook</button>
                 <h6>222 cooked this</h6>
-                <h6>cooking time - 1hr</h6> */}
-{/* <!-- Button trigger modal --> */}
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <h6>cooking time - 1hr</h6>
+                  
+{/* 
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Launch demo modal
 </button>
 
-{/* <!-- Modal --> */}
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" style="display:none;" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -99,7 +102,11 @@ const About = () => {
   </div>
 </div>
 
-                </Col>
+
+ */}
+
+
+              </Col>
               </Row>
                 
               

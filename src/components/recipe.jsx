@@ -14,7 +14,6 @@ function Recipe() {
         <br></br>
         <br></br>
         <br></br>
-        <br></br>
         <h1>This is a recipe page</h1>
         
         <Container>
