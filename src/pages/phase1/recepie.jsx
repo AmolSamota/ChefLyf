@@ -32,7 +32,7 @@ const About = () => {
                
               <Row className="justify-content-center mb-2 mr-2 ">
             
-                <MyCarousal />
+                {/* <MyCarousal /> */}
               </Row>
               <Row>
               <Col className="d-flex justify-content-center flex-wrap">

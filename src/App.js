@@ -5,9 +5,6 @@ import Home from "./components/home";
 import Profile from "./components/profile";
 import Recipe from "./components/recipe";
 import Save from "./components/saved";
-import UploadForm from './comps/UploadForm';
-import ImageGrid from './comps/ImageGrid';
-import Modal from './comps/Modal';
 import { projectFirestore, projectStorage } from "../src/firebase/config";
 import './App.css';
 

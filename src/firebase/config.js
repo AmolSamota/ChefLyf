@@ -20,4 +20,4 @@ import 'firebase/firestore'
   const projectFirestore = firebase.firestore();
   const timestamp = firebase.firestore.FieldValue.serverTimestamp;
 
-  export { projectFirestore, projectStorage, timestamp };
+  export { projectFirestore, projectStorage, timestamp};

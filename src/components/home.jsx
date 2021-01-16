@@ -1,18 +1,22 @@
 import React from "react";
 import "./home.css";
+import { Link } from "react-router-dom";
 import { projectFirestore, projectStorage } from "../firebase/config";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import MyCarousal from "../pages/carousal/carousal";
 import { AiOutlineStar } from "react-icons/ai";
 import { BiComment } from "react-icons/bi";
 import { AiOutlineHeart } from "react-icons/ai";
+import { FiUser } from "react-icons/fi";
 
-
+const recipes = []
 class Home extends React.Component {
 
     state = {
-        recipes: null
+        recipes: null,
+        users : null
       }
     
       componentDidMount(){
@@ -20,7 +24,7 @@ class Home extends React.Component {
         projectFirestore.collection('recipes')
                          .get()
                          .then ( snapshot => {
-                           const recipes = []
+                           
                            snapshot.forEach( doc => {
                              const data = doc.data()
                              recipes.push(data)
@@ -28,7 +32,8 @@ class Home extends React.Component {
                            this.setState({ recipes: recipes })
                           //  console.log(snapshot)
                          })
-                         .catch(error => console.log(error))
+                         .catch(error => console.log(error))                
+                         
     
       }
     render(){
@@ -37,8 +42,9 @@ class Home extends React.Component {
         <div className="home">
             <h1 className="d">Welcome to ChefLyf</h1>
             {
-                this.state.recipes && 
-                this.state.recipes.map( recipes => {
+                // this.state.users && 
+                this.state.recipes &&
+                this.state.recipes.map(  recipes => {
                     return (
                     <div>
                         <Container>
@@ -50,7 +56,7 @@ class Home extends React.Component {
                                 <Col xs={12} md={6}>
 
                                     <Row className="justify-content-center mb-2 mr-2 ">
-                                        {<img className="img" src={recipes.coverPics[0]}></img> }
+                                        { <MyCarousal /> }
                                     </Row>
 
                                     <Row className="justify-content-center mb-2 mr-2 ">
@@ -81,9 +87,29 @@ class Home extends React.Component {
                                 {/* second column */}
                                 <Col xs={12} md={6}>
                                 
-                                    <Row className="justify-content-center mb-2 mr-2 ">
-                                        <h1><p>{recipes.userName}</p></h1>
-                                    </Row>
+                                <Row>
+                                    <Col xs={12} md={6}>
+                                        <Row>
+                                                <h4>{recipes.recipeName}</h4>
+                                        </Row>
+                                        <Row>
+                                                <h6><p>{recipes.userName}</p></h6>
+                                        </Row>
+                                    </Col>
+                                    <Col xs={12} md={6}>
+                                    
+                                        <Row className="justify-content-center mb-2 mr-2 ">
+                                            <Link to="/recipe">
+                                                <button href="#profile">< FiUser /> Cook</button>
+                                            </Link>
+                                            
+                                        </Row>
+                                        <Row className="justify-content-center mb-2 mr-2 ">
+                                            { recipes.peopleCooked }&nbsp; users cooked this
+                                        </Row>
+                                    </Col>
+                                </Row>
+                                
 
                                     <Row>
                                         <Col xs={12} md={4}>
