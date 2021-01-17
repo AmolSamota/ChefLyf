@@ -12,7 +12,12 @@ const MyCarousal = () => {
       <Carousel controls={true} indicators interval={2500} pause={false}>
         <Carousel.Item>
             
-            <img className="d-block w-100 custom-img" src={recipes.coverPics[0]} alt="First slide" />
+            <img className="d-block w-100 custom-img" src={pav} alt="First slide" />
+          
+        </Carousel.Item>
+        <Carousel.Item>
+            
+            <img className="d-block w-100 custom-img" src={pasta} alt="First slide" />
           
         </Carousel.Item>
       

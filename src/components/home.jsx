@@ -1,15 +1,16 @@
 import React from "react";
-import "./home.css";
 import { Link } from "react-router-dom";
 import { projectFirestore, projectStorage } from "../firebase/config";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import MyCarousal from "../pages/carousal/carousal";
 import { AiOutlineStar } from "react-icons/ai";
 import { BiComment } from "react-icons/bi";
 import { AiOutlineHeart } from "react-icons/ai";
 import { FiUser } from "react-icons/fi";
+import Carousel from "react-bootstrap/Carousel";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import MyCarousal from "../pages/carousal/carousal";
+
 
 const recipes = []
 class Home extends React.Component {
@@ -24,21 +25,22 @@ class Home extends React.Component {
         projectFirestore.collection('recipes')
                          .get()
                          .then ( snapshot => {
-                           
                            snapshot.forEach( doc => {
                              const data = doc.data()
                              recipes.push(data)
                            })
                            this.setState({ recipes: recipes })
-                          //  console.log(snapshot)
+                           
                          })
                          .catch(error => console.log(error))                
                          
     
-      }
+      };
+    //   console.log()
     render(){
     return(
     <div>
+        
         <div className="home">
             <h1 className="d">Welcome to ChefLyf</h1>
             {
@@ -56,7 +58,15 @@ class Home extends React.Component {
                                 <Col xs={12} md={6}>
 
                                     <Row className="justify-content-center mb-2 mr-2 ">
-                                        { <MyCarousal /> }
+                                        <Carousel controls={true} indicators interval={2500} pause={false}>
+                                        
+                                            <Carousel.Item>
+                                            
+                                                <img className="d-block w-100 custom-img" src={recipes.coverPics[0]} alt="First slide" />
+                                            
+                                            </Carousel.Item>
+                                        
+                                        </Carousel>
                                     </Row>
 
                                     <Row className="justify-content-center mb-2 mr-2 ">

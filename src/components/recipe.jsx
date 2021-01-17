@@ -5,7 +5,6 @@ import About from "../pages/phase1/recepie";
 import Ingredients from "../pages/ingredients/ingredients";
 import CookingSteps from "../pages/steps/steps";
 import Comment from "../pages/comments/comments";
-import "./recipe.css";
 
 
 function Recipe() {

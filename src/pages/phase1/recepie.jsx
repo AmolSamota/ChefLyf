@@ -19,7 +19,6 @@ import { AiOutlineHeart } from "react-icons/ai";
 
 const About = () => {
   
-
   return (
 
     <div id="about">
@@ -32,7 +31,7 @@ const About = () => {
                
               <Row className="justify-content-center mb-2 mr-2 ">
             
-                {/* <MyCarousal /> */}
+                <MyCarousal />
               </Row>
               <Row>
               <Col className="d-flex justify-content-center flex-wrap">
@@ -76,35 +75,6 @@ const About = () => {
                 <button href="#steps">Cook</button>
                 <h6>222 cooked this</h6>
                 <h6>cooking time - 1hr</h6>
-                  
-{/* 
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" style="display:none;" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
- */}
-
 
               </Col>
               </Row>
